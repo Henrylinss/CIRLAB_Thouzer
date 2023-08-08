@@ -1,0 +1,15 @@
+<!-- main_launch.launch -->
+<launch>
+
+  <arg name="ip" default="192.168.0.209"/>
+  <arg name="ip_server" default="192.168.0.237"/>
+
+  <arg name="port_body" default="9000"/>
+  <arg name="port_kinect" default="10000"/>
+  <arg name="port_server" default="1234"/>
+
+  <!-- Launch first Python script -->
+  <node name="socket_bodyCount" pkg="action_recognition" type="bodyCount_socketServer.py" args="--ip $(arg ip) --port $(arg port_body)" output="screen"/>
+  <node name="socket_image" pkg="action_recognition" type="kinectv2Image_socketServer.py" output="screen"/>
+
+</launch>
