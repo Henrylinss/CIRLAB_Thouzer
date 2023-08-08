@@ -1,0 +1,9 @@
+<!-- main_launch.launch -->
+<launch>
+  <!-- Launch first Python script -->
+  <node name="kinectImage_node" pkg="action_recognition" type="kinectv2Image_socketServer.py"/>
+
+  <!-- Launch second Python script -->
+  <node name="demo3_node" pkg="thouzer_mqtt" type="agv_demo3.py" output="screen" />
+  
+</launch>
