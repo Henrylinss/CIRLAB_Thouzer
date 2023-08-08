@@ -1,0 +1,10 @@
+<!-- main_launch.launch -->
+<launch>
+  <!-- Launch first Python script -->
+  <!--node name="vel2D_node" pkg="thouzer_mqtt" type="mqtt_sub_vel2D.py" output="screen" /-->
+  
+  <!-- Launch second Python script -->
+  <node name="odom_node" pkg="thouzer_mqtt" type="odom_v2.py" output="screen" />
+
+  <include file="$(find amcl)/examples/amcl.launch" />
+</launch>

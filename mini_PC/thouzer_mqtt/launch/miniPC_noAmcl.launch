@@ -1,0 +1,19 @@
+<launch>
+
+  </node>  
+  <node name="status_node" pkg="thouzer_mqtt" type="status_report.py" output="screen">
+    <param name="port" value="1234" />
+    <param name="ip" value="192.168.0.237" />
+  </node>
+
+  </node>  
+  <node name="audio_node" pkg="thouzer_mqtt" type="agv_audio_report.py" output="screen">
+    <param name="port" value="1234" />
+    <param name="ip" value="192.168.0.237" />
+  </node>
+
+  <node name="move_or_not_node" pkg="thouzer_mqtt" type="agv_move_or_not.py" output="screen">
+
+
+
+</launch>

@@ -1,0 +1,13 @@
+<!-- tracked_robot_navigation -->
+<launch>
+<!-- tf -->
+  <node pkg="tf" type="static_transform_publisher" name="base_linktolaser" args="0 0 0 1 0 0 0 base_link laser 100" />
+<!-- laser -->
+  <node pkg="urg_node" name="urg_node" type="urg_node">
+  <param name="ip_address" value="192.168.212.1"/>
+  </node>
+<!-- Run the slam -->
+  <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping">
+  <param name="scan" value="scan"/>
+  </node>
+</launch>
