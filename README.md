@@ -14,4 +14,3 @@
 - demo指令
   ## 筆記型電腦
 - 傳輸<font color='Blue'>RGB影像</font>和<font color='Blue'>骨架資料</font><font color='Red'>(socket)</font>
-aaaaaaaaaaaaaaaaaaaaaaaaaaaa
