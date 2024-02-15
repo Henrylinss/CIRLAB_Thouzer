@@ -1,4 +1,5 @@
 # CIRLAB_Thouzer
+![image](https://github.com/Henrylinss/CIRLAB_Thouzer/blob/main/img/%E6%A9%9F%E6%A7%8B.png)
 - 分為三個裝置運行(小電腦、伺服器、筆記型電腦)
 - 於小電腦和伺服器中使用ROS1系統
 - 使用到的通訊系統
