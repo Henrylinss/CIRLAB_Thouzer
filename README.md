@@ -13,5 +13,6 @@
   ## 伺服器(server_PC)
 - 運行監控系統
 - demo指令
+  ![image]()
   ## 筆記型電腦
 - 傳輸<font color='Blue'>RGB影像</font>和<font color='Blue'>骨架資料</font><font color='Red'>(socket)</font>
